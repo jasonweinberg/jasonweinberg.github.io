@@ -13,38 +13,6 @@
     .w3-twothird p {
       font-weight: normal;
     }
-    /* Dark mode styles */
-    body.dark-mode {
-      background-color: #121212;
-      color: white;
-    }
-    body.dark-mode .w3-white {
-      background-color: #1e1e1e !important;
-    }
-    body.dark-mode .w3-text-grey {
-      color: #b0b0b0 !important;
-    }
-    body.dark-mode .w3-text-teal {
-      color: #80cbc4 !important;
-    }
-    .toggle-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .toggle-button {
-      background-color: #ffffff;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 5px;
-      font-size: 16px;
-      color: #000;
-    }
-    body.dark-mode .toggle-button {
-      background-color: #333333;
-      color: #ffffff;
-    }
   </style>
 </head>
 <body class="w3-light-grey">
@@ -110,10 +78,7 @@
     <div class="w3-twothird">
       <!-- Portfolio Projects -->
       <div class="w3-container w3-card w3-white">
-        <div class="toggle-container">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Portfolio Projects<b></h2>
-          <button id="theme-toggle" class="toggle-button">Toggle Dark Mode</button>
-        </div>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Portfolio Projects<b></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Tableau Data Visualization & Python Data Analysis</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-certificate fa-fw w3-margin-centre"></i><b> NHL Draft: Scouting & Development<b></h6>
@@ -182,19 +147,6 @@
   
   <!-- End Page Container -->
 </div>
-
-<script>
-  // Toggle dark mode
-  const toggleButton = document.getElementById('theme-toggle');
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-      toggleButton.textContent = 'Toggle Light Mode';
-    } else {
-      toggleButton.textContent = 'Toggle Dark Mode';
-    }
-  });
-</script>
 
 </body>
 </html>
